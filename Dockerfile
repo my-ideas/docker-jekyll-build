@@ -1,5 +1,5 @@
-FROM ruby:2.6.3
-RUN gem install html-proofer -v 3.4.0
+FROM ruby:2.6.5
+RUN gem install html-proofer
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 RUN unzip awscli-bundle.zip
 RUN  ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
